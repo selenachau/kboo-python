@@ -1,6 +1,6 @@
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn'
-df = pd.read_csv("kboo_pbcore_master.csv")
+df = pd.read_csv("https://github.com/selenachau/kboo-metadata/blob/master/search_results_metadata.csv")
 
 keep_cols = ["assetIdentifier", "physicalFormat", "generations", "durationPhysical", "originalCarrierLocation","date", "dateType","itemTitle", "intellectualAssetType"]
 
