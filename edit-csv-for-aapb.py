@@ -2,7 +2,7 @@ import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn'
 df = pd.read_csv("kboo_pbcore_master.csv")
 
-keep_cols = ["assetIdentifier", "physicalFormat", "Generations", "DurationPhysical", "originalCarrierLocation","Date", "Date Type","itemTitle", "intellectualAssetType"]
+keep_cols = ["assetIdentifier", "physicalFormat", "generations", "durationPhysical", "originalCarrierLocation","date", "dateType","itemTitle", "intellectualAssetType"]
 
 new_df = df[keep_cols]
 new_df.rename(columns={'assetIdentifier': 'Unique Identifier', 'physicalFormat': 'Physical Format',
